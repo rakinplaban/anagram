@@ -30,15 +30,15 @@ class Solution:
                 if list1[i] not in list2:
                     flag = 1
                     
-        if flag == 0 :
-            return True
+            if flag == 0 :
+                return True
                 
         else:
             return False
         
         
-list_a = "aa"
-list_b = "bc"
+list_a = "a"
+list_b = "nagaram"
 t = Solution()
 t = t.isAnagram(list_a,list_b)
 print("List 1 = ",list_a)
