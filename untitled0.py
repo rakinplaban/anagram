@@ -24,27 +24,23 @@ class Solution:
         
         flag = 0
             
-        if len(list1) <= len(list2):
+        if len(list1) == len(list2) and len(s) == len(t):
             for i in range(len(list1)):
                 #for j in range(len(list2)):
                 if list1[i] not in list2:
                     flag = 1
-                
-        else:
-            for i in range(len(list2)):
-                #for j in range(len(list2)):
-                if list2[i] not in list1:
-                    flag = 1
                     
-        if flag == 0:
+        if flag == 0 :
             return True
                 
         else:
             return False
         
         
-list_a = "b"
-list_b = "rat"
+list_a = "aa"
+list_b = "bc"
 t = Solution()
 t = t.isAnagram(list_a,list_b)
+print("List 1 = ",list_a)
+print("List 2 = ",list_b)
 print(t)
