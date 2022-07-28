@@ -9,16 +9,16 @@ from collections import Counter
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        s1 = Counter(s)
-        s2 = Counter(t)
+        # s1 = Counter(s)
+        # s2 = Counter(t)
         list1,list2 = [],[]
         
-        for i in s1:
+        for i in s:
             list1.append(i)
             
         list1.sort()
             
-        for i in s2:
+        for i in t:
             list2.append(i)
         list2.sort()
         
@@ -37,8 +37,8 @@ class Solution:
             return False
         
         
-list_a = "a"
-list_b = "nagaram"
+list_a = "anagrama"
+list_b = "nagaramm"
 t = Solution()
 t = t.isAnagram(list_a,list_b)
 print("List 1 = ",list_a)
